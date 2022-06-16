@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fish_island">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fish_Island">
+        <activity
+            android:name=".LikeActivity"
+            android:exported="false" >
+        <intent-filter>
+            <action android:name="fishIsland.intent.action.favorite" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".OrderCreatedActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.orderCreated" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.payment" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeliveryActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.delivery" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderHistoryActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.orderHistory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.profile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EmptyBagActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.emptyBag" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BagActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.bag" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishisland.intent.action.auth" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlugActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.plug" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NavActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fishIsland.intent.action.nav" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

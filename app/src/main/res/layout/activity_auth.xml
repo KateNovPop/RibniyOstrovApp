@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBgColor"
+    tools:context=".AuthActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fish_island_logo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.4"
+        android:fontFamily="sans-serif"
+        android:text="Email или номер телефона"
+        android:textColor="@color/AuthText"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AuthCheck"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:alpha="0.4"
+        android:fontFamily="sans-serif"
+        android:text="Пароль"
+        android:textColor="@color/AuthText"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/EmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInput"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/PasswordInput"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/EmailInput"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/AuthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_button_rectangle"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/AuthButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_unlock"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/jejumyeongjo_regular"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/AuthButton"
+        app:layout_constraintEnd_toEndOf="@+id/AuthButton"
+        app:layout_constraintStart_toStartOf="@+id/AuthButton"
+        app:layout_constraintTop_toTopOf="@+id/AuthButton"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:text="Забыли пароль?"
+        android:textColor=" #455179"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@+id/PasswordInput"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
+
+    <TextView
+        android:id="@+id/AuthCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="5dp"
+        android:text="Логин"
+        android:textColor="#455179"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/AuthCheck"
+        app:layout_constraintEnd_toStartOf="@+id/AuthCheck"
+        app:layout_constraintTop_toTopOf="@+id/AuthCheck"
+        app:srcCompat="@drawable/ic_unlock_top"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/RegCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="showRegistegWindow"
+        android:text="Регистрация"
+        android:textColor="#455179"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/RegCheck"
+        app:layout_constraintEnd_toStartOf="@+id/RegCheck"
+        app:layout_constraintTop_toTopOf="@+id/RegCheck"
+        app:srcCompat="@drawable/ic_user_plus"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="134dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="9dp"
+        app:cardBackgroundColor="#A8DBDD"
+        app:layout_constraintEnd_toEndOf="@+id/AuthCheck"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/AuthCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
